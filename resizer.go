@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/davecheney/profile"
+	//"github.com/davecheney/profile"
 	"github.com/nfnt/resize"
 	"strconv"
 	"sync"
@@ -57,10 +57,10 @@ func resizeImage(img string, target string, width uint, height uint) error {
 }
 
 func main() {
-	defer profile.Start(&profile.Config{
+	/*defer profile.Start(&profile.Config{
         MemProfile: true,
         ProfilePath: ".",
-    }).Stop()
+    }).Stop()*/
 
 	flag.Parse()
 	if flag.NArg() != 4 {
